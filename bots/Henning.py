@@ -5,7 +5,7 @@ from card import Card, CardType
 from game_handling.game_state import GameState
 
 
-class SmartHenning(Bot):
+class Henning(Bot):
     def play(self, state: GameState) -> Optional[Card]:
         """
         Decide which card to play based on game state and card priorities.

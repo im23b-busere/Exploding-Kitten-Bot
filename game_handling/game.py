@@ -41,9 +41,9 @@ class Game:
             print(f"Amount of cards left in deck: {self.game_state.cards_left}")
             print()
 
-            if not self.testing:
+            #if not self.testing:
                 # await user input for next turn
-                input("Press Enter to continue...")
+                #input("Press Enter to continue...")
         return next(bot for bot in self.bots if bot.alive)
 
     def take_turn(self, bot: Bot) -> bool:
